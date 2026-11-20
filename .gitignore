@@ -1,0 +1,57 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python packaging and build artifacts
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.coverage.*
+
+# Type checking and linting caches
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# Logs
+*.log
+
+# Node.js dependencies
+node_modules/
+
+# Frontend build output
+dist/
+
+# Vite cache
+.vite/
+
+# Playwright
+playwright-report/
+test-results/
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
