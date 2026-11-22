@@ -4,7 +4,7 @@ from collections.abc import Sequence
 import httpx
 
 from app.ai.models import ChatMessage
-
+from app.ai.providers.base import AIProviderError
 
 class OllamaProvider:
     def __init__(
@@ -34,13 +34,17 @@ class OllamaProvider:
             ],
             "stream": False,
         }
+        try:
+            response = await self.client.post(
+                "/api/chat",
+                json=payload,
+            )
+            response.raise_for_status()
 
-        response = await self.client.post(
-            "/api/chat",
-            json=payload,
-        )
-
-        response.raise_for_status()
+        except httpx.HTTPError as exc:
+            raise AIProviderError(
+                "The AI provider request failed."
+            ) from exc
 
         data = response.json()
 
