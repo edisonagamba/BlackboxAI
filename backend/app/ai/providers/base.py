@@ -18,3 +18,6 @@ class AIProvider(Protocol):
         messages: Sequence[ChatMessage],
     ) -> AsyncIterator[str]:
         pass
+
+class AIProviderError(Exception):
+    """Raised when an AI provider request fails."""
