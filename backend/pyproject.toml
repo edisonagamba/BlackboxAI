@@ -13,6 +13,7 @@ dependencies = [
     "uvicorn[standard]",
     "pydantic-settings",
     "python-dotenv",
+    "httpx",
 ]
 
 [tool.setuptools.packages.find]
