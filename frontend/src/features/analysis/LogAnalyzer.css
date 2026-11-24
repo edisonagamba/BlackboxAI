@@ -1,0 +1,72 @@
+
+.analyzer {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #282d35;
+  border: 1px solid #3b424d;
+  border-radius: 12px;
+  color: #f5f5f5;
+}
+
+.analyzer h2 {
+  margin-top: 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.field label {
+  font-weight: 600;
+}
+
+.field textarea {
+  width: 100%;
+  min-height: 110px;
+  padding: 14px;
+  color: #f5f5f5;
+  background: #1c2026;
+  border: 1px solid #454d59;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.field textarea:focus {
+  outline: 2px solid #8ef14b;
+  border-color: transparent;
+}
+
+.analyze-button {
+  padding: 12px 22px;
+  color: #1c2026;
+  background: #8ef14b;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.analyze-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #454d59;
+}
+
+.results pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+
+.error {
+  color: #ff7777;
+}
