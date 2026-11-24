@@ -33,15 +33,7 @@ Blackbox AI aims to simplify this investigation process by providing an AI-assis
 
 The application follows a layered architecture that separates presentation, API handling, business logic, and AI provider integration.
 
-```mermaid
-flowchart TD
-    A["React + TypeScript"] -->|"HTTP / JSON"| B["FastAPI"]
-    B --> C["AnalysisService"]
-    C --> D["AIProvider Interface"]
-    D --> E["OllamaProvider"]
-    E --> F["Ollama Runtime"]
-    F --> G["Qwen 3.5:9b"]
-```
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/676d1f05-0a27-4073-87f1-daafa082b5b2" />
 
 ### Architectural responsibilities
 
@@ -88,7 +80,7 @@ flowchart TD
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/edisonagamba/BlackboxAI.git
 cd BlackboxAI
 ```
 
